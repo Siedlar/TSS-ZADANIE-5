@@ -26,6 +26,7 @@ class HelloController {
         themodel.addAttribute("lista",carService.pobierzListe());
         return "hello";
     }
+
     @RequestMapping("/dodajAuto")
     public String dodajAuto(Model themodel){
        Car car=new Car();

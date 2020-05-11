@@ -6,6 +6,7 @@
         <fileset id="fileset" name="Spring Mvc Demo Servlet" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring-mvc-demo-servlet.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/carconf.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/security-config.xml</file>
         </fileset>
       </configuration>
     </facet>

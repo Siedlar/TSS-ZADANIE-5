@@ -8,6 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="security"
+           uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
 </head>
@@ -62,5 +64,14 @@
 <h3> <a href="wyswietlAuta">Wyswietl auta</a></h3>
 <h3> <a href="${pageContext.request.contextPath}/usunWszystko">Usun wszystkie auta</a></h3>
 <h3> <a href="aktualizujForm">Zaaktualizuj wybrane auto</a></h3>
+<a href="<c:url value='/j_spring_security_logout'/>">Logout</a><br>
+<security:authorize access="hasRole('ROLE_USER')">
+    Ten tekst wyswietlany jest tylko userowi, User nie moze usunac wszystkich aut,tylko admin może
+    <br/>
+</security:authorize>
+<security:authorize access="hasRole('ROLE_ADMIN')">
+   Ten tekst widzi tylko admin
+    <br/>
+</security:authorize>
 </body>
 </html>

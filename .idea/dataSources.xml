@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Baza" uuid="87444a09-8f2c-4c8e-8842-d2adac90bb49">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="dataSource" uuid="bc33cb84-e318-4950-a272-396f77371af0">
+      <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://52.29.239.198:3306/sql7335507</jdbc-url>
+      <imported>true</imported>
+      <remarks>spring
+
+C:/Users/Siedlar/Desktop/webapplication/src/main/webapp/WEB-INF/spring-mvc-demo-servlet.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://www.remotemysql.com:3306/51W3tVZBVV?serverTimezone=UTC</jdbc-url>
     </data-source>
   </component>
 </project>

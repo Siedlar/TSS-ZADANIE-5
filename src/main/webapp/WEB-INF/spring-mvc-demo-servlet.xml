@@ -34,28 +34,28 @@
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
+                <prop key="connection.pool_size">10</prop>
             </props>
         </property>
     </bean>
+
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" autowire="byName">
         <property name="driverClassName">
             <value>com.mysql.jdbc.Driver</value>
         </property>
 
         <property name="url">
-            <value>jdbc:mysql://52.29.239.198/sql7335507?serverTimezone=UTC</value>
+            <value>jdbc:mysql://www.remotemysql.com:3306/51W3tVZBVV?serverTimezone=UTC</value>
         </property>
 
         <property name="username">
-            <value>sql7335507</value>
+            <value>51W3tVZBVV</value>
         </property>
 
         <property name="password">
-            <value>NWTri1zfJk</value>
+            <value>NWZ5Su0v4q</value>
         </property>
     </bean>
-    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
-        <property name="basenames" value="wiadomosci"></property>
-            </bean>
+
 </beans>
 
